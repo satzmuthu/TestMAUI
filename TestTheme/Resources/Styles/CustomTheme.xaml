@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="TestTheme.Style.CustomTheme">
+    <Color x:Key="Primary">red</Color>
+    <Color x:Key="Secondary">Green</Color>
+    <Color x:Key="Tertiary">Blue</Color>
+
+    <Style x:Key="PrimaryBoxView"
+           TargetType="BoxView">
+        <Setter Property="HeightRequest"
+                Value="50" />
+        <Setter Property="Color"
+                Value="{StaticResource Primary}" />
+    </Style>
+
+    <Style x:Key="SecondaryBoxView"
+           TargetType="BoxView">
+        <Setter Property="HeightRequest"
+                Value="75" />
+        <Setter Property="Color"
+                Value="{StaticResource Secondary}" />
+    </Style>
+
+    <Style x:Key="TertiaryBoxView"
+           TargetType="BoxView">
+        <Setter Property="HeightRequest"
+                Value="100" />
+        <Setter Property="Color"
+                Value="{StaticResource Tertiary}" />
+    </Style>
+
+
+</ResourceDictionary>
